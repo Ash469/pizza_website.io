@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #faf6f6;
+    margin: 0;
+    padding: 0;   
+    
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    color: #0abcf8fc;
+  font-style: italic;
+    /* background: linear-gradient(to right, rgb(16, 16, 16), rgb(137, 213, 13)); */
+    
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: auto;
+    padding-bottom: 40px;
+    justify-content:center;
+    background: linear-gradient(to top, red, blue),
+    linear-gradient(to right, #5500ff, #00ff55);
+    background-blend-mode: screen;
+   
+}
+
+.pizza-card {
+    background: linear-gradient(to top, lime, 20%, cyan);
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    
+}
+
+.pizza-card:hover {
+    transform: scale(1.05);
+}
+
+.pizza-card img {
+    width: 100%;
+    border-radius: 8px;
+    height: auto;
+}
+
+.pizza-card h2 {
+    font-size: 20px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.pizza-card p {
+    margin: 5px 0;
+    color: #777;
+}
+
+.available {
+    color: green;
+    font-weight: bold;
+}
+
+.sold-out {
+    color: red;
+    font-weight: bold;
+}
+
+.no-pizzas {
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+}
+.btn.cart {
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn.cart:hover {
+    background-color: #15d3dd;
+    animation: hithere 2.5s ease-in-out;
+}
+
+
+ @keyframes hithere {
+    30% { transform: scale(1.2); }
+    40%, 60% { transform: rotate(-10deg) scale(1.2); }
+    50% { transform: rotate(10deg) scale(1.2); }
+    70% { transform: rotate(0deg) scale(1.2); }
+    100% { transform: scale(1); }
+  }
+

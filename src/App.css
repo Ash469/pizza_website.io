@@ -1,0 +1,48 @@
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+/* App.css */
+
+/* Style for the cart button */
+.cart-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #ff6347; /* Tomato color for the button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: #ff4500; /* Darker shade on hover */
+}
+
+.cart-btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.cart-btn a:hover {
+  color: white;
+}
+
+/* Add some padding to your main container to avoid content behind the button */
+
+/* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make sure the footer is at the bottom */
+}
